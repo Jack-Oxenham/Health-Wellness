@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary & Weight Loss</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/dietary.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gym.html">Gym and Training</a></li>
+                <li><a href="dietary.html">Dietary & Weight Loss</a></li>
+                <li><a href="supplementation.html">Supplementation</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="coaching.html">Coaching & Mentoring</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cards-container">
+            
+            <div class="card information-card">
+                <h1 class="heading-spacing">Understanding a Calorie Deficit</h1>
+                <p class="paragraph-spacing">
+                    A calorie deficit is the most effective method of losig weight, it occurs when you consume fewer daily calories than your body needs to maintain its current weight. This forces your body to burn stored fat for energy, leading to weight loss, I will take you through step by step the best ways to ensure you are in a calorie deficit to guarantee weight loss.
+                </p>
+                <ul class="list-spacing">
+                    <li> The first step to starting a calorie deficit it to weigh yourself on an empty stomach in the morning to get your true weight.</li>
+                    <li> You can then use are calorie deficit Calculator to input your information and recieve the daily calories required to guarantee weight loss</li>
+                    <li> You will then use a calorie tracking app to track everying you consume on a daily basis to ensure you are staying within your daily calories.</li>
+                    <li> It is key to remember that while you are losing weight your maintenance calories will be also reducing; ensure you weigh yourself weekly to track and keep on track of this.</li>
+                </ul>
+                <p class="paragraph-spacing2">
+                    Remember, drastic calorie deficits can be harmful and lead to muscle loss or nutritional deficiencies. Always aim for a daily deficit of 200-500 calories to be most efficient. Do not forget that cardio can be utilized for extra calories. 
+                </p>
+            </div>
+
+          
+            <div class="card calculator-card">
+                <h1>Calorie Deficit Calculator</h1>
+                <form id="calorie-form">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                    <label for="gender">Gender:</label>
+                    <div class="gender-buttons">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male" class="gender-btn">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female" class="gender-btn">Female</label>
+                    </div>
+
+                    <label for="activity-level">Activity Level:</label>
+                    <select id="activity-level" name="activity-level">
+                        <option value="1.2">Sedentary</option>
+                        <option value="1.375">Lightly active</option>
+                        <option value="1.55">Moderately active</option>
+                        <option value="1.725">Very active</option>
+                        <option value="1.9">Extremely active</option>
+                    </select>
+
+                    <input type="submit" value="Calculate">
+                </form>
+                <p id="calorie-result"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/calorie-script.js"></script>
+</body>
+</html>

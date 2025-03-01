@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gym.html">Gym and Training</a></li>
+                <li><a href="dietary.html">Dietary & Weight Loss</a></li>
+                <li><a href="supplementation.html">Supplementation</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="coaching.html">Coaching & Mentoring</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h1>Test Your Knowledge</h1>
+            <div id="quiz-question" class="quiz-card">
+                <p class="question-text">Question will appear here.</p>
+                <div class="options">
+                    <button class="option-btn">Option 1</button>
+                    <button class="option-btn">Option 2</button>
+                    <button class="option-btn">Option 3</button>
+                    <button class="option-btn">Option 4</button>
+                </div>
+                <div class="quiz-footer">
+                    <button id="prev-btn" class="nav-btn">Previous</button>
+                    <button id="next-btn" class="nav-btn">Next</button>
+                </div>
+            </div>
+            <div id="quiz-result" class="quiz-card" style="display: none;">
+                <h2>Quiz Completed!</h2>
+                <p id="result-text">Your score will appear here.</p>
+                <button id="restart-btn" class="nav-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
+
+

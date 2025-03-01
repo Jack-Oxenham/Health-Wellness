@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Training</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/my-training.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gym.html">Gym and Training</a></li>
+                <li><a href="dietary.html">Dietary & Weight Loss</a></li>
+                <li><a href="supplementation.html">Supplementation</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="coaching.html">Coaching & Mentoring</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cards-container">
+            
+            <div class="card training-input-card">
+                <h1>Add Training Entry</h1>
+                <form id="training-form">
+                    <input type="date" id="date" name="date" required>
+                    <input type="text" id="exercise" name="exercise" placeholder="Exercise" required>
+                    <input type="number" id="weight" name="weight" placeholder="Weight (kg)" required>
+                    <input type="number" id="reps" name="reps" placeholder="Reps" required>
+                    <input type="number" id="sets" name="sets" placeholder="Sets" required>
+                    <input type="submit" value="Add Entry">
+                </form>
+            </div>
+
+          
+            <div class="card training-log-card">
+                <h1>My Training Log</h1>
+                <table class="training-log" id="training-log">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Exercise</th>
+                            <th>Weight (kg)</th>
+                            <th>Reps</th>
+                            <th>Sets</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="log-entries">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/training.js"></script>
+</body>
+</html>
+

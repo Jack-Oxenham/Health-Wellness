@@ -1,0 +1,65 @@
+
+/* General styling for exercise sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Title styling */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Flex container for exercises to align videos in a row */
+.exercise-row {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces videos */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevents wrapping so 4 videos stay in a row */
+    gap: 20px; /* Spacing between videos */
+}
+
+/* Styling for individual exercise cards */
+.exercise {
+    text-align: center;
+    width: 23%; /* Ensures exactly four videos per row */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 300px; /* Adjusted for a uniform look */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure text inside exercise cards is properly aligned */
+.exercise h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .exercise-row {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center;
+    }
+    .exercise {
+        width: 45%; /* Two videos per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .exercise {
+        width: 100%; /* Stack videos vertically on small screens */
+    }
+}
+
+

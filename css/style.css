@@ -1,0 +1,638 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e8f5e9; /* Soft green for a health-focused theme */
+    color: #333;
+}
+
+header {
+    background: #4CAF50; /* Bright green to symbolize health */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Lighter green on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color: #2e7d32; /* Darker green for headings */
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.overview a {
+    display: block;
+    padding: 1rem 2rem;
+    background: #81c784; /* Light green buttons */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.overview a:hover {
+    background: #66bb6a; /* Slightly darker green on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+
+.gym-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.gym-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: calc(33% - 2rem);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gym-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gym-card h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.gym-card p {
+    margin-bottom: 1.5rem;
+}
+
+.gym-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.gym-card .btn:hover {
+    background: #45a049;
+}
+
+.training-splits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.split-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: calc(30% - 1rem);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.split-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.split-card h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.split-card p {
+    font-size: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.exercise-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.video-card {
+    text-align: center;
+    width: 300px;
+}
+
+.video-card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#my-training {
+    margin-top: 2rem;
+}
+
+#training-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#training-form label {
+    flex-basis: 100%;
+}
+
+#training-form input {
+    padding: 0.5rem;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#training-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#training-form button:hover {
+    background-color: #45a049;
+}
+
+#training-log {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#training-log th,
+#training-log td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+#training-log th {
+    background-color: #f4f4f4;
+}
+
+#training-log tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#training-log tr:hover {
+    background-color: #f1f1f1;
+}
+
+#training-log button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#training-log button:hover {
+    background-color: #c0392b;
+}
+#calorie-deficit {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f3f7fc;
+    border: 1px solid #d4e1ec;
+    border-radius: 8px;
+}
+
+#calorie-calculator {
+    margin-top: 20px;
+}
+
+#calorie-form input, #calorie-form select {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#calorie-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#calorie-form button:hover {
+    background-color: #218838;
+}
+
+#calorie-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+/* Supplementation Page Styling */
+#categories .category {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#recommendations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f3f7fc;
+    border: 1px solid #d4e1ec;
+    border-radius: 8px;
+}
+
+#goal-form select, #goal-form button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#goal-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#goal-form button:hover {
+    background-color: #0056b3;
+}
+
+#recommendation-result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#faq h3 {
+    margin: 10px 0 5px;
+    color: #007bff;
+}
+
+#faq p {
+    margin-bottom: 15px;
+    color: #555;
+}
+/* Mood Tracker Styling */
+.mood-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.mood-entry p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.edit-button, .delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Goal Log */
+.goal-entry {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.goal-entry p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.edit-button, .delete-button {
+    margin: 5px 5px 0 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #FFC107;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+.delete-button {
+    background-color: #DC3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+/* General Quiz Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.quiz-question p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.quiz-question input {
+    margin-right: 10px;
+}
+
+#submit-quiz {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-quiz:hover {
+    background-color: #0056b3;
+}
+
+#quiz-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

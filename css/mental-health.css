@@ -1,0 +1,91 @@
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.top-card {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.card {
+    background-color: white;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p, .card ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #388e3c;
+}
+
+
+
+

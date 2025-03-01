@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementation</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/supplementation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gym.html">Gym and Training</a></li>
+                <li><a href="dietary.html">Dietary & Weight Loss</a></li>
+                <li><a href="supplementation.html">Supplementation</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="coaching.html">Coaching & Mentoring</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+       
+        <div class="card top-card">
+            <h2>Understanding Supplementation</h2>
+            <p>
+                Supplementation can bridge nutritional gaps, enhance training performance, 
+                and support overall health. When used appropriately, supplements can help you 
+                achieve your fitness and wellness goals.
+            </p>
+        </div>
+    
+        
+        <div class="cards-container">
+            <div class="card">
+                <h2>Types of Supplements</h2>
+                <ul>
+                    <li>Protein Powders</li>
+                    <li>Vitamins and Minerals</li>
+                    <li>Pre-Workout Supplements</li>
+                    <li>Post-Workout Recovery</li>
+                    <li>Omega-3 Fatty Acids</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Benefits of Supplements</h2>
+                <p>
+                    <strong>Protein Powders:</strong> Build and repair muscle.<br>
+                    <strong>Vitamins and Minerals:</strong> Support immunity and overall health.<br>
+                    <strong>Pre-Workout:</strong> Boost energy and focus.<br>
+                    <strong>Recovery Supplements:</strong> Reduce soreness and improve recovery.<br>
+                    <strong>Omega-3s:</strong> Promote heart and brain health.
+                </p>
+            </div>
+        </div>
+    
+        
+        <div class="card recommendation-card">
+            <h2>Supplement Recommendations</h2>
+            <p>Select your goal from the dropdown below, and we'll recommend supplements to help you achieve it:</p>
+            <form id="recommendation-form">
+                <select id="goal-select">
+                    <option value="" disabled selected>Choose your goal</option>
+                    <option value="muscle">Build Muscle</option>
+                    <option value="weight_loss">Weight Loss</option>
+                    <option value="energy">Increase Energy</option>
+                    <option value="recovery">Improve Recovery</option>
+                    <option value="general_health">General Health</option>
+                </select>
+                <button type="submit">Get Recommendations</button>
+            </form>
+            <p id="recommendation-result"></p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+    </footer>
+    
+    <script src="../js/supplementation.js"></script>
+</body>
+</html>
